@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <style>
+      html,
+      body {
+        height: 100%;
+        background-color: black;
+      }
+      .parent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+    <script>
+      function foo1() {
+        document.getElementById("main").innerHTML =
+          '<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRmUVDfCPRbLBUZInQsHrStCxK-MhcxfGgOlfCTEfyqWE4g6GPeMqPO8xZ0L-8Tegiyh_7rAdqHk575/embed?start=false&loop=false&delayms=3000" frameborder="0" width="1440" height="800" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>';
+      }
+      function foo2() {
+        document.getElementById("main").innerHTML =
+          '<iframe frameborder="0" style="width: 1440px; height: 800px" src="https://replit.com/@KrishBhardwaj1/test?lite=true"></iframe>';
+      }
+    </script>
+  </head>
+  <body>
+    <nav class="navbar bg-dark" id="navtest">
+      <form class="container-fluid justify-content-start">
+        <button
+          class="btn btn-outline-success me-2"
+          type="button"
+          onclick="foo1()"
+        >
+          Presentation
+        </button>
+        <button
+          class="btn btn-outline-success me-2"
+          type="button"
+          onclick="foo2()"
+        >
+          Code
+        </button>
+      </form>
+    </nav>
+    <div id="main" class="parent"></div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
